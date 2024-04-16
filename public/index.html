@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pomodoro Timer</title>
+	<link href="./css/styles.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+		rel="stylesheet">
+</head>
+
+<body class="bg-cover bg-center font-nunito"
+	style="background-image: url(./images/background.jpg);">
+	<div class="flex flex-col justify-center items-center h-screen">
+		<div class="flex justify-center">
+			<a href="./index.html"><img src="./images/logo.png" alt="Logo" width="120px" style="margin-top: 20px;"></a>
+		</div>
+		<div class="flex flex-col justify-center h-screen">
+			<div class="flex flex-col sm:flex-row justify-center items-center mb-6">
+				<button id="pomodoro-button"
+					class="inline-block rounded-lg border-2 border-white bg-white px-4 py-2 text-base font-bold text-black lowercase active:bg-white  active:text-black">Pomodoro</button>
+				<span class="mx-2"></span>
+				<button id="short-break-button"
+					class="inline-block rounded-lg border-2 border-white bg-transparent px-4 py-2 text-base font-bold text-white lowercase active:bg-white active:text-black"
+					style="margin: 10px;">Short
+					Break</button>
+				<span class="mx-2"></span>
+				<button id="long-break-button"
+					class="inline-block rounded-lg border-2 border-white bg-transparent px-4 py-2 text-base font-bold text-white lowercase active:bg-white active:text-black">Long
+					Break</button>
+			</div>
+			<div class="flex justify-center items-center mb-6">
+				<div id="timer-display" class="text-6xl sm:text-9xl font-bold text-white">25:00</div>
+			</div>
+			<div class="flex justify-center items-center">
+				<button id="reset-button" class="text-3xl text-black mr-4">
+					<i class="fa-solid fa-arrow-rotate-left text-white"></i>
+				</button>
+				<button id="start-button"
+					class="inline-block rounded-lg border border-white bg-white px-4 py-2 lowercase text-base font-bold text-black w-32">Start</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="./scripts/app.js"></script>
+
+</html>

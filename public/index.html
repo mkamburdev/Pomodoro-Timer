@@ -15,20 +15,18 @@
 		rel="stylesheet">
 </head>
 
-<body class="bg-cover bg-center font-nunito"
-	style="background-image: url(./images/background.jpg);">
+<body class="bg-cover bg-center font-nunito">
 	<div class="flex flex-col justify-center items-center h-screen">
-		<div class="flex justify-center">
-			<a href="./index.html"><img src="./images/logo.png" alt="Logo" width="120px" style="margin-top: 20px;"></a>
+		<div id="logo" class="flex justify-center">
+			<a href="./index.html"><img src="./images/logo.png" alt="Logo" width="170px"></a>
 		</div>
-		<div class="flex flex-col justify-center h-screen">
+		<div id="content" class="flex flex-col justify-center h-screen">
 			<div class="flex flex-col sm:flex-row justify-center items-center mb-6">
 				<button id="pomodoro-button"
 					class="inline-block rounded-lg border-2 border-white bg-white px-4 py-2 text-base font-bold text-black lowercase active:bg-white  active:text-black">Pomodoro</button>
 				<span class="mx-2"></span>
 				<button id="short-break-button"
-					class="inline-block rounded-lg border-2 border-white bg-transparent px-4 py-2 text-base font-bold text-white lowercase active:bg-white active:text-black"
-					style="margin: 10px;">Short
+					class="inline-block rounded-lg border-2 border-white bg-transparent px-4 py-2 text-base font-bold text-white lowercase active:bg-white active:text-black">Short
 					Break</button>
 				<span class="mx-2"></span>
 				<button id="long-break-button"

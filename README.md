@@ -1,18 +1,16 @@
 <div align="center">
+<img src ="./public/images/logo.png" width="150px" alt="PB Final Project">
+</div>
+
+<div align="center">
 
 # DCI PB Final Project
 
 </div>
 
 <div align="center">
-<img src ="./public/images/logo.png" width="150px" alt="PB Final Project">
-</div>
-
-<br />
-
-<div align="center">
   
-[**Screenshots**](#screenshots) || [**Features**](#features) || [**Technologies**](#technologies) || [**Color Reference**](#color-reference) || [**Installation**](#installation) || [**Demo**](#demo) || [**Feedback**](#Feedback)
+[**Screenshots**](#screenshots) || [**Features**](#features) || [**Technologies**](#technologies) || [**Color Reference**](#color-reference) || [**Installation**](#installation) || [**Demo**](#demo) || [**Feedback**](#feedback)
 
 </div>
 

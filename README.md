@@ -10,7 +10,7 @@
 
 <div align="center">
   
-[**Screenshots**](#screenshots) || [**Features**](#features) || [**Technologies**](#technologies) || [**Color Reference**](#color-reference) || [**Installation**](#installation) || [**Demo**](#demo) || [**Feedback**](#feedback)
+[**Screenshots**](#screenshots) || [**Features**](#features) || [**Technologies**](#technologies) || [**Color Reference**](#color-reference) || [**Fonts**](#fonts) || [**Photos**](#photos) || [**Demo**](#demo) || [**Author**](#author)
 
 </div>
 
@@ -50,34 +50,19 @@ The application has a simple and intuitive design that looks good on all devices
 | Black | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 | Black Rock | ![#2d2f3b](https://via.placeholder.com/10/2d2f3b?text=+) #2d2f3b |
 
-## Installation
+## Fonts
+- Google Fonts
+- Nunito
 
-Follow these steps to get the project up and running on your local machine:
-
-1. **Clone the Repository**: First, clone the repository to your local machine. You can do this by running the following command in your terminal:
-
-```bash
-git clone git@github.com:mkamburdev/PB-Final-Project.git
-```
-2. **Navigate to the Project Directory**: Change your current directory to the project directory:
-
-```bash
-cd PB-Final-Project
-```
-
-3. **Open the Project**: You can now open the project in your preferred code editor. If you're using Visual Studio Code, you can open the project by typing:
-
-```bash
-code .
-```
-
-4. **Run the Project**: Since this is a front-end project, you can run it in your browser. If you're using a live server extension in your code editor, start the live server. Otherwise, you can simply open the index.html file in your browser.
+## Photos
+- Unsplash
   
 ## Demo
 
 [https://pb-final-project.vercel.app](https://pb-final-project.vercel.app)
 
   
-## Feedback
+## Author
 
-If you have any feedback, please contact us at mkambur@proton.me.
+- E-mail - [mkambur@proton.me](mkambur@proton.me)
+- LinkedIn - [@mkambur](https://linkedin.com/in/mkambur)

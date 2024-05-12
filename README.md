@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# DCI PB Final Project
+# Pomodoro Timer
 
 </div>
 
@@ -59,7 +59,7 @@ The application has a simple and intuitive design that looks good on all devices
   
 ## Demo
 
-[https://pb-final-project.vercel.app](https://pb-final-project.vercel.app)
+[https://pomodoro-timer-mk.vercel.app](https://pomodoro-timer-mk.vercel.app)
 
   
 ## Author

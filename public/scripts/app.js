@@ -26,6 +26,11 @@ function updateTimerDisplay() {
   document.title = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")} - Pomodoro Timer`;
 }
 
+function playSoundNotification() {
+  const audio = new Audio('/public/sounds/sound.mp3');
+  audio.play();
+}
+
 function toggleTimer() {
   if (isRunning) {
     clearInterval(timer);
@@ -36,6 +41,9 @@ function toggleTimer() {
       timeLeft--;
       if (timeLeft <= 0) {
         stopTimer();
+        alert("Time's up!");
+        playSoundNotification(); 
+        setTimer(currentDuration);
       }
       updateTimerDisplay();
     }, 1000);

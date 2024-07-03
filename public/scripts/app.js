@@ -19,6 +19,21 @@ const durations = {
   longBreak: 600,
 };
 
+let audioContext;
+
+async function loadAndPlayAudio(url) {
+  if (!audioContext) {
+    audioContext = new AudioContext();
+  }
+  const response = await fetch(url);
+  const arrayBuffer = await response.arrayBuffer();
+  const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+  const source = audioContext.createBufferSource();
+  source.buffer = audioBuffer;
+  source.connect(audioContext.destination);
+  source.start();
+}
+
 function updateTimerDisplay() {
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
@@ -27,8 +42,7 @@ function updateTimerDisplay() {
 }
 
 function playSoundNotification() {
-  const audio = new Audio('/public/sounds/sound.mp3');
-  audio.play();
+  loadAndPlayAudio('../sounds/sound.mp3').catch(error => console.error("There was an error loading audio", error));
 }
 
 function toggleTimer() {
@@ -65,17 +79,17 @@ function setTimer(duration) {
 }
 
 function updateButtonStyles(button) {
-	Object.values(buttons).forEach(btn => {
-	  if (btn !== buttons.start) {
-		 btn.classList.remove("bg-white", "text-black");
-		 btn.classList.add("bg-transparent", "text-white");
-	  }
-	});
-	if (button !== buttons.start) {
-	  button.classList.remove("bg-transparent", "text-white");
-	  button.classList.add("bg-white", "text-black");
-	}
- }
+  Object.values(buttons).forEach(btn => {
+    if (btn !== buttons.start) {
+      btn.classList.remove("bg-white", "text-black");
+      btn.classList.add("bg-transparent", "text-white");
+    }
+  });
+  if (button !== buttons.start) {
+    button.classList.remove("bg-transparent", "text-white");
+    button.classList.add("bg-white", "text-black");
+  }
+}
 
 buttons.reset.addEventListener("click", () => setTimer(currentDuration));
 buttons.start.addEventListener("click", toggleTimer);
@@ -88,3 +102,9 @@ Object.keys(durations).forEach(key => {
 });
 
 setTimer(durations.pomodoro);
+
+document.getElementById('enable-sound').addEventListener('click', () => {
+  if (!audioContext) {
+    audioContext = new AudioContext();
+  }
+});
